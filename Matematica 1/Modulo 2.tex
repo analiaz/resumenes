@@ -4,18 +4,17 @@
 \begin{document}
 \section{Factorial-Permutacion-Conbinatoria}
 
-\paragraph{factorial}
+\paragraph{Factorial}
 	\begin{itemize}
-		\item 0! = 1\\
-		 
-		\item 1! = 1;\\
-		\item $\forall n \geq 1; n(n-1)(n-2)....1;$
+		\item $0!$ = 1		 
+		\item $1!$ = 1;
+		\item  $\forall n \geq 1; n(n-1)(n-2)....1;$ = $n!$ 
 	\end{itemize}
 
 \paragraph{Principio de multiplicacion}
 
 \begin{itemize}
-\item Si una actividad de t pasos sucesivos y el paso 1 puede realizarce de $n_1$ formas, el paso 2 puede realizarse de $n_2$ formas ,...,el paso t puede realizarse de $n_t$ formas,	entonces el numero de diferentes resultados posibles es	$n_1$,$n_2$...$n_t$
+\item Si una actividad de t pasos sucesivos y el paso 1 puede realizarce de $n_1$ formas, el paso 2 puede realizarse de $n_2$ formas ,...,el paso t puede realizarse de $n_t$ formas,	entonces el numero de diferentes resultados posibles es	$n_1$,$n_2$...$n_t$.
 \end{itemize}
 
 \paragraph{Principo de la suma}
@@ -23,12 +22,12 @@
 	\item si una esperiencia $E_1$  se puede efectuar de $n_1$ maneras $\neq$ y una experiencia $E_2$ se puede efectuar de $m_2$ maneras y no se efectuan simultaneamente $E_1$ y $E_2$, el numero total de maneras de efectuar  $E_1$ o $E_2$ es $m_1 + m_2$.
 \end{itemize}
 
-\paragraph{permutacion}
+\paragraph{Permutacion}
 \begin{itemize}
 	\item P(n) = n! de n elementos distintos.
 \end{itemize}
 
-\paragraph{r-permutaciones}
+\paragraph{R-permutaciones}
 \begin{itemize}
 	\item Al numero de r-peromutaciones de un conjunto de n elementos distintos lo denotaremos P(n,r):
 	\begin{equation*}
@@ -46,7 +45,7 @@
 	\end{equation*}
 \end{itemize}
 
-\paragraph{Convinaciones}
+\paragraph{Combinaciones}
 \begin{itemize}
 	\item Dado un conjunto de n elementos dedistintos los cuales no estan ordenados n: objetos K$\leq$n
 	\begin{equation}
@@ -56,7 +55,7 @@
 
 \section{Matrices}
 
-\paragraph{matriz mxn}
+\paragraph{Matriz mxn}
 
 \begin{itemize}
 	\item m = filas, n = columnas, donde $a_{ij}$ es la posicion actual.
@@ -74,7 +73,7 @@
  
 \paragraph{Matriz Nula}
 \begin{itemize}
-	\item Todos sus coeficientes son nulos, puede ser	cuadrada o rectangular: 
+	\item Todos sus coeficientes son nulos, puede ser cuadrada o rectangular: 
 	\begin{equation}
 	(O)_{ij} = 0, \forall i , \forall j
 	\end{equation}
@@ -140,7 +139,7 @@
 
 \paragraph{Matriz Inversa}
 \begin{itemize}
-	\item sea A $\in$ $R^{mxn}$, A tiene inversa si existe una matriz B $\in$ $R^{mxn}$ talque A.B = I $\vee$ B.A = I, y se piden las dos condiciones porque el producto de matrices no posee emn general la propiedad conmutatividad.	
+	\item sea A $\in$ $R^{mxn}$, A tiene inversa si existe una matriz B $\in$ $R^{mxn}$ talque A.B = I $\wedge$ B.A = I, y se piden las dos condiciones porque el producto de matrices no posee emn general la propiedad conmutatividad.	
 \end{itemize}
 
 \paragraph{propiedad}
@@ -160,13 +159,13 @@
 	\item si A es nxn y B es nxn, entonces $(A.B)^T$ = $B^T$.$A^T$
 	
 	
-	\item $\textbf{Matriz simetrica}$ matriz A cuadrada nxn talque A = $A^T$
-	\item $\textbf{Matriz antisimetrica}$ matriz A cuadrada nxn talque $A^T$ = -A
+	\item $\textbf{Matriz simetrica}$ matriz A cuadrada nxn talque A = $A^T$.
+	\item $\textbf{Matriz antisimetrica}$ matriz A cuadrada nxn talque $A^T$ = -A.
 \end{enumerate}
 
 \paragraph{Matriz Escalonada}
 \begin{itemize}
-	\item el numero de ceros que preceden al primer coeficiente no nulo, aumenta en las filas siguientes. El primer coeficiente no nulo de cada fila es el coeficiente princical
+	\item el numero de ceros que preceden al primer coeficiente no nulo, aumenta en las filas siguientes. El primer coeficiente no nulo de cada fila es el coeficiente princical.
 \end{itemize}
 		
 \paragraph{Matriz Reducida}
@@ -174,42 +173,42 @@
 \begin{itemize}
 	\item una matriz no nula A es $\textbf{reducida}$ si es escalonada y ademas sus coeficientes principales cumplen :
 	\begin{enumerate}
-		\item son los unicos coeficientes distintos de cero en sus respectivas columnas
-		\item son todos iguales a 1
+		\item son los unicos coeficientes distintos de cero en sus respectivas columnas.
+		\item son todos iguales a 1.
 	\end{enumerate}
 \end{itemize}
 
 \paragraph{Operaciones elementales sobre las filas de una matriz}
 \begin{enumerate}
-	\item multiplicar una fila por un escalar $\alpha.F_K$ $\longrightarrow$ $F_K$
+	\item multiplicar una fila por un escalar $\alpha.F_K$ $\longrightarrow$ $F_K$.
 	\item sumar a la fila $F_h$ la fila $F_K$ multiplicada por $\alpha$ no nulo
-	 $F_h$+$\alpha$.$F_K$ $\longrightarrow$ $F_h$ 
-	\item permutar dos filas $F_h$ $\longleftrightarrow$ $F_K$
-	\item se llama rango de una matriz A,indicado con r(A), al numero de filas no nulas de la escalonada o la reducida $R_A$ equivalente con A
+	 $F_h$+$\alpha$.$F_K$ $\longrightarrow$ $F_h$. 
+	\item permutar dos filas $F_h$ $\longleftrightarrow$ $F_K$.
+	\item se llama rango de una matriz A,indicado con r(A), al numero de filas no nulas de la escalonada o la reducida $R_A$ equivalente con A.
 \end{enumerate}
 
 \paragraph{Calculo de la inversa de una matriz}
 \begin{itemize}
-	\item dada una matriz cuadrada A nxn, se amplia ubicando a su derecha la matriz identidad I del mismo orden de A, formando la matriz(A I) de orden nx2n
-	\item a esta matriz ampliada (A I) se le aplica operaciones elementales y si $R_A$ es la identidad entonces donde se ubico I se tendra la inversa $A^{-1}$ de A
+	\item dada una matriz cuadrada A nxn, se amplia ubicando a su derecha la matriz identidad I del mismo orden de A, formando la matriz(A I) de orden nx2n.
+	\item a esta matriz ampliada (A I) se le aplica operaciones elementales y si $R_A$ es la identidad entonces donde se ubico I se tendra la inversa $A^{-1}$ de A.
 \end{itemize}
 
 \paragraph{Teorema Rouchè-Frobenius}
 \begin{itemize}
-	\item Un sistema A.x = b es compatible $\Leftrightarrow$ r(A) = r(A$\mid$b')
+	\item Un sistema A.x = b es compatible $\Leftrightarrow$ r(A) = r(A$\mid$b').
 \end{itemize}
 \begin{enumerate}
-	\item r(A) = r(A $\mid$ b') = n incognitas compatible con solucion unica DETERMINADA
-	\item r(A) = r(A$\mid$b') $<$ n incognitas compatible con infinitas soluciones INDETERMINADO
-	\item r(A) $<$ r(A$\mid$b') sistema INCOMPATIBLE
+	\item r(A) = r(A $\mid$ b') = \textbf{n} incognitas compatible con solucion unica DETERMINADA.
+	\item r(A) = r(A$\mid$b') $<$ \textbf{n} incognitas compatible con infinitas soluciones INDETERMINADO.
+	\item r(A) $<$ r(A$\mid$b') sistema INCOMPATIBLE.
 \end{enumerate}
 
 \paragraph{Sistemas homogeneos de ecuaciones lineales}
 \begin{itemize}
 	\item un sistema de ecuacion lineal es homogeneo si todos los terminos independientes son ceros A.x = 0
-	\item todo sistema homogeneo es compatible: solucion trivial todas las incognitas se remplazan por ceros
-	\item si el sistema es determinado, tiene una unica solucion que debe necesariamente ser la trivial
-	\item si el sistema es indeterminado tendra ademas de la trivial otras infinitas soluciones
+	\item todo sistema homogeneo es compatible: solucion trivial todas las incognitas se remplazan por ceros.
+	\item si el sistema es determinado, tiene una unica solucion que debe necesariamente ser la trivial.
+	\item si el sistema es indeterminado tendra ademas de la trivial otras infinitas soluciones.
 \end{itemize}
 
 \paragraph{Determinantes de una matriz}
@@ -217,75 +216,129 @@
 	\item estan definidas en las matrices cuadradas, A de 2x2 
 \end{itemize}
 \begin{enumerate}
-	\item se calcula $\mid A \mid$ = $a_{11}.a_{22} - a_{21}.a_{12}$
+	\item se calcula $\mid A \mid$ = $a_{11}.a_{22} - a_{21}.a_{12}$.
 \end{enumerate}
 
 \paragraph{propiedades}
 \begin{itemize}
-	\item A cualquiera nxn
+	\item \textbf{A} cualquiera nxn.
 \end{itemize}
 
 \begin{enumerate}
-	\item det$(A^T)$ = det A
+	\item det$(A^T)$ = det A.
 	\begin{itemize}
-		\item \textbf{corolario} toda prop de los determinantes que se enuncia para las filas vale tambien para las columnas
+		\item \textbf{corolario} toda prop de los determinantes que se enuncia para las filas vale tambien para las columnas.
 	\end{itemize}
-	\item si se multiplican todos los coeficientes de una fila de A por un escalar \textit{c} entonces el detA queda multiplicado por \textit{c}
+	\item si se multiplican todos los coeficientes de una fila de A por un escalar \textit{c} entonces el detA queda multiplicado por \textit{c}.
 	\begin{itemize}
 		\item \textbf{corolario} si concideramos la matriz \textit{c}.A(producto de un escalar \textit{c} por la matriz A ) entonces det(\textit{c}.A) = $c^n$.det A
 	\end{itemize}
 	\item Si una fila (o columna) de A tiene todos sus coeficientes iguales a 0 entonces detA = 0
 	\item sean A, B matrices $R^{nxn}$ entonces det(A.B) = detA.detB
 	\begin{itemize}
-		\item para la matriz I nxn, detI = 1, cualquiera sea n
+		\item para la matriz I nxn, detI = 1, cualquiera sea n.
 	\end{itemize}
-	\item A tiene inversa si y solo si det(A) es distinto de 0
-	\item Si la matriz A tiene inversa $A^{-1}$, entonces det($A^{-1}$) = $[det A]^{-1}$ = $\dfrac{1}{det A}$
-	\item A.x = b tiene solucion unica (es compatible determinado) si y solo si la matriz A tiene inversa
+	\item A tiene inversa si y solo si det(A) es distinto de 0.
+	\item Si la matriz A tiene inversa $A^{-1}$, entonces det($A^{-1}$) = $[det A]^{-1}$ = $\dfrac{1}{det A}$.
+	\item A.x = b tiene solucion unica (es compatible determinado) si y solo si la matriz A tiene inversa.
 \end{enumerate}
 
 \paragraph{Espacios vectoriales}
 \begin{itemize}
 	\item un espacio vectorial $\textbf{V}$ es un conjunto no vacio, cuyos elementos se pueden sumar entre si y multiplicar por escalares simpre perteneciendo a $\textbf{V}$ incluso su producto.
 \end{itemize}
-\paragraph{propiedades}
+\paragraph{Propiedades}
 \begin{itemize}
-	\item $\vec{u},\vec{x},\vec{w},\vec{v}$ $\in$ $\textbf{V}$
+	\item $\vec{u},\vec{x},\vec{w},\vec{v}$ $\in$ $\textbf{V}$.
 \end{itemize}
 
 \begin{enumerate}
-	\item $(\vec{u}$ + $\vec{v})$ + $\vec{w}$  = $\vec{u}$ + ($\vec{v}$ + $\vec{w})$ = $\vec{u}$ + $\vec{v}$ + $\vec{w}$
-	\item neutro, vector nulo $\vec{0}$; $\vec{v}$ + $\vec{0}$ = $\vec{v}$ = $\vec{0}$ + $\vec{v}$
-	\item todo $\vec{v}$ tiene opuesto -$\vec{v}$ talque  $\vec{v}$ + (-$\vec{v}$) = $\vec{v}$ - $\vec{v}$ = $\vec{0}$
-	\item $\forall$ $\vec{v}$,$\vec{u}$;   $\vec{u}$ + $\vec{v}$ = $\vec{v}$ + $\vec{u}$
-	\begin{itemize}
-		\item $\alpha$,$\beta$ $\in$ $\Bbb{R}$
-	\end{itemize}
-	\item ($\alpha$ + $\beta$).$\vec{v}$ = $\vec{v}$ + $\alpha$. + $\vec{v}$ $\beta$
-	\item $\alpha$.($\vec{u}$ + $\vec{v}$) = $\alpha$.$\vec{u}$ + $\alpha$.$\vec{v}$
-	\item ($\alpha$.$\beta$).$\vec{v}$ = $\alpha$.($\beta$.$\vec{v}$)
-	\item 1 .$\vec{v}$ = $\vec{v}$	  
+	\item $(\vec{u}$ + $\vec{v})$ + $\vec{w}$  = $\vec{u}$ + ($\vec{v}$ + $\vec{w})$ = $\vec{u}$ + $\vec{v}$ + $\vec{w}$.
+	\item neutro, vector nulo $\vec{0}$; $\vec{v}$ + $\vec{0}$ = $\vec{v}$ = $\vec{0}$ + $\vec{v}$.
+	\item todo $\vec{v}$ tiene opuesto -$\vec{v}$ talque  $\vec{v}$ + (-$\vec{v}$) = $\vec{v}$ - $\vec{v}$ = $\vec{0}$.
+	\item $\forall$ $\vec{v}$,$\vec{u}$;   $\vec{u}$ + $\vec{v}$ = $\vec{v}$ + $\vec{u}$.
 \end{enumerate}
+\begin{itemize}
+	\item $\alpha$,$\beta$ $\in$ $\Bbb{R}$.
+\end{itemize}
+\begin{enumerate}
+	\item ($\alpha$ + $\beta$).$\vec{v}$ = $\vec{v}$ + $\alpha$. + $\vec{v}$ $\beta$.
+	\item $\alpha$.($\vec{u}$ + $\vec{v}$) = $\alpha$.$\vec{u}$ + $\alpha$.$\vec{v}$.
+	\item ($\alpha$.$\beta$).$\vec{v}$ = $\alpha$.($\beta$.$\vec{v}$).
+	\item 1 .$\vec{v}$ = $\vec{v}$.	  
 
-\paragraph{subespacios vectoriales}
+\end{enumerate}
+	
+
+\paragraph{Subespacios vectoriales}
 \begin{itemize}
 	\item un conjunto $\textbf{S}$ incluido en un espacio vectorial $\textbf{V}$ es un subespacio de $\textbf{V}$ si satisface las siguientes condiciones:
 \end{itemize}
 \begin{enumerate}
-	\item el vector nulo 0 $\in$ $\textbf{S}$
-	\item Si $\vec{v}$,$\vec{w}$ $\in$ $\textbf{S}$ entonces $\vec{v}$+$\vec{w}$ tambien $\in$ $\textbf{S}$
-	\item $\alpha$ $\in$ $\Bbb{R}$ $\longrightarrow$ $\alpha$.$\vec{v}$ $\in$ $\textbf{S}$ 
+	\item el vector nulo 0 $\in$ $\textbf{S}$.
+	\item Si $\vec{v}$,$\vec{w}$ $\in$ $\textbf{S}$ entonces $\vec{v}$+$\vec{w}$ tambien $\in$ $\textbf{S}$.
+	\item $\alpha$ $\in$ $\Bbb{R}$ $\longrightarrow$ $\alpha$.$\vec{v}$ $\in$ $\textbf{S}$. 
 \end{enumerate}
 
 \paragraph{Conbinacion lineal.Vectores Generadores}
 \begin{itemize}
-	\item Un vector $\textbf{V}$ es una convinacion lineal de los vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$ $\in$ $\textbf{V}$ si existen escalares $c_1,c_2,...,c_k$ no necesariamente distintos tales que
+	\item Un vector $\textbf{V}$ es una convinacion lineal de los vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$ $\in$ $\textbf{V}$ si existen escalares $c_1,c_2,...,c_k$ no necesariamente distintos tales que:
 	\begin{equation}
-		v = 
+		v = c_1.\vec{v}_1,c_2.\vec{v}_2,...,c_k\vec{v}_k = \sum_{j=1}^{k} c_j.\vec{v}_j
+	\end{equation}
+	\item Cuando un vector es convinacion lineal de otros, esta no es necesariamente unica.Dado un conjunto de vectores no siempre uno de ellos es una convinacion lineal de los otros.
+\end{itemize}
+\paragraph{Subespacio generado y generadores}
+\begin{itemize}
+	\item si $\textbf{v}$ = $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k \in \textbf{V}$.  
+	\item $\vec{v}$ es convinacion lineal de $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$ :	
+	\begin{equation}
+		\vec{v} = \alpha_1.\vec{v}_1+\alpha_2.\vec{v}_2,...,\alpha_k.\vec{v}_k =  \sum_{j=1}^{k} \alpha_j.\vec{v}_j
+	\end{equation}
+			
+	\begin{equation}
+	 v = \sum_{j=1}^{k} c_j.v_j = \langle\vec{v}_1,\vec{v}_2,...,\vec{v}_k\rangle
+	\end{equation}	 
+	
+	\item subespacios generados por $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$
+	\begin{equation}
+		\textbf{S} = \lbrace \alpha_1.\vec{u}+\alpha_2.\vec{v};\alpha_1,\alpha_2 \in \Bbb{R}\rbrace = \langle \vec{u},\vec{v}\rangle
 	\end{equation}
 \end{itemize}
 
+\paragraph{Dependencia e Independencia lineal de vectores}
+\begin{itemize}
+	\item un conjunto de vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k \in \textbf{V}$ es \textbf{linealmente dependiente} si se verifica una de las dos condiciones siguientes:
+\end{itemize}
+\begin{enumerate}
+	\item alguno de los vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$ es una convinacion lineal de los demas.
+	\item existen escalares $c_1,c_2,...,c_k$ que no son todos nulos tales que 
+	\begin{equation}
+		 c_1.\vec{v}_1,c_2.\vec{v}_2,...,c_k\vec{v}_k = \sum_{j=1}^{k} c_j.v_j = 0
+	\end{equation}
+\end{enumerate}
+\begin{itemize}
+	\item los vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$  de un espacio V son \textbf{linealmente independientes} si la realcion de arriba cumple tambien que $\vec{v}_1 = 0$,$\vec{v}_2 = 0$,...,$\vec{v}_k = 0$. 
+	\end{itemize}
+	
+\paragraph{Bases y dimenciones}
+\begin{itemize}
+	\item sean $\vec{v}_1,\vec{v}_2,...,\vec{v}_n$ vectores no nulos de un espacio vectorial \textbf{V}.El conjunto $\lbrace\vec{v}_1,\vec{v}_2,...,\vec{v}_n\rbrace$ es una base de \textbf{V} y a la vez se dice que V tiene dimension n, si cumple:
+\begin{enumerate}
+	\item $\vec{v}_1,\vec{v}_2,...,\vec{v}_n$ son linealmente independientes.
+	\item $\vec{v}_1,\vec{v}_2,...,\vec{v}_n$ generan $\textbf{V}$.
+\end{enumerate}	
+\end{itemize}
 
-
+\paragraph{Propiedades}
+\begin{itemize}
+	\item sea \textbf{V} un espacio vectorial de dimension \textbf{n}, entonces: 
+\end{itemize}
+\begin{enumerate}
+	\item la base de \textbf{V} no es unica.
+	\item todas las bases de \textbf{V} tienen exactamente \textbf{n} elementos.
+	\item cualquier subconjunto de \textbf{V} que contenga $n+1$ vectores es linealmente dependiente.
+	\item si un conjunto de \textbf{V} tiene \textbf{n} vectores linealmente independientes, entonces es una base de \textbf{V}.
+\end{enumerate}
 
 \end{document}
