@@ -1,0 +1,291 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\section{Factorial-Permutacion-Conbinatoria}
+
+\paragraph{factorial}
+	\begin{itemize}
+		\item 0! = 1\\
+		 
+		\item 1! = 1;\\
+		\item $\forall n \geq 1; n(n-1)(n-2)....1;$
+	\end{itemize}
+
+\paragraph{Principio de multiplicacion}
+
+\begin{itemize}
+\item Si una actividad de t pasos sucesivos y el paso 1 puede realizarce de $n_1$ formas, el paso 2 puede realizarse de $n_2$ formas ,...,el paso t puede realizarse de $n_t$ formas,	entonces el numero de diferentes resultados posibles es	$n_1$,$n_2$...$n_t$
+\end{itemize}
+
+\paragraph{Principo de la suma}
+\begin{itemize}
+	\item si una esperiencia $E_1$  se puede efectuar de $n_1$ maneras $\neq$ y una experiencia $E_2$ se puede efectuar de $m_2$ maneras y no se efectuan simultaneamente $E_1$ y $E_2$, el numero total de maneras de efectuar  $E_1$ o $E_2$ es $m_1 + m_2$.
+\end{itemize}
+
+\paragraph{permutacion}
+\begin{itemize}
+	\item P(n) = n! de n elementos distintos.
+\end{itemize}
+
+\paragraph{r-permutaciones}
+\begin{itemize}
+	\item Al numero de r-peromutaciones de un conjunto de n elementos distintos lo denotaremos P(n,r):
+	\begin{equation*}
+		P(n,r) = n(n-1)(n-2)...(n-r+1)
+	\end{equation*}
+
+	\item Sean n y r numeros naturales tales que 1$\leq$ r $\leq$ n:
+	\begin{equation*}
+		P(n,r)= \dfrac{n!}{(n-r)!}
+	\end{equation*}
+
+	\item Una sucecion S de n objetos entre los que hay $n_1$ elementos iguales del tipo 1, $n_2$ elementos iguales del tipo 2.... $n_k$ elementos iguales del tipo K, el numero de permutaciones distinguibles de los elementos de S es:
+	\begin{equation*}
+		\dfrac{n!}{n_1!n_2!...n_k!}
+	\end{equation*}
+\end{itemize}
+
+\paragraph{Convinaciones}
+\begin{itemize}
+	\item Dado un conjunto de n elementos dedistintos los cuales no estan ordenados n: objetos K$\leq$n
+	\begin{equation}
+		C(n,k) = \binom n k  = \dfrac{n!}{k!(n-k)!}
+	\end{equation}
+\end{itemize}
+
+\section{Matrices}
+
+\paragraph{matriz mxn}
+
+\begin{itemize}
+	\item m = filas, n = columnas, donde $a_{ij}$ es la posicion actual.
+\end{itemize}
+\begin{equation}
+\left[ 
+\begin{array}{ccccc}
+	a_{11} & a_{12} & a_{13} & ... & a_{1n} \\
+	a_{21} & a_{22} & a_{23} & ... & a_{2n} \\
+	... & ... & ... & ... & ... \\
+	a_{m1} & a_{m2} & a_{m3} & ... & a_{mn}
+\end{array}
+\right] 
+\end{equation}
+ 
+\paragraph{Matriz Nula}
+\begin{itemize}
+	\item Todos sus coeficientes son nulos, puede ser	cuadrada o rectangular: 
+	\begin{equation}
+	(O)_{ij} = 0, \forall i , \forall j
+	\end{equation}
+\end{itemize}
+
+\paragraph{Matriz identidad I}
+\begin{itemize}
+\item matriz diagonal, en la que los coeficientes de la diagonal principal son todos 1.
+
+\begin{equation}
+	I : \begin{cases}
+			(I)_{ij} = 1,  i = j \\
+			(I)_{ij} = 0,  i \neq j		
+		\end{cases}
+\end{equation}
+\end{itemize}
+
+\paragraph{Suma de matrices}
+\begin{itemize}
+	\item Sean A,B matrices mxn, la suma de A + B es la matriz mxn donde cada coeficiente $(A + B)_{ij}$ = $a_{ij}$ + $b_{ij}$ = $(A)_{ij}$ + $(B)_{ij}$.
+\end{itemize}
+
+\paragraph{propiedades}
+\begin{itemize}
+	\item Sean A,B,C $\in$ $R^{mxn}$.
+\end{itemize}
+
+\begin{enumerate}
+	\item Asociatividad : A +(B + C) = (A + B) + C
+	\item Existencia del neutro: (matriz nula O) $\in$ $R^{mxn}$ talque $\forall$ matriz A $\in$ $R^{mxn}$, A + O = O + A = A;
+	\item $\forall$ matriz A $\in$ $R^{mxn}$ $\exists$ una matriz B  $\in$ $R^{mxn}$ talque A + B = B + A = 0, siendo B la opuesta de A y se indica -A.
+	\item Conmutatividad:  $\forall$ par de matrices A, B $\in$ $R^{mxn}$, A + B = B + A
+\end{enumerate}
+
+\paragraph{Producto de un escalar (numero real) por una matriz}
+
+\begin{itemize}
+ \item sean A $\in$ $R^{mxn}$ y $\alpha$ $\in$ R, $\alpha$.A es la matriz de $R^{mxn}$ talque cada coeficiente $(\alpha.A)_{ij}$ = $\alpha$.$(A)_{ij}$ = $\alpha.a_{ij}$  
+\end{itemize}	
+
+\paragraph{propiedades}
+\begin{itemize}
+	\item Sean $\alpha$, $\beta$ escalares y A,B matrices $mxn$.
+\end{itemize}
+
+\begin{enumerate}
+	\item $\alpha$.(A + B) = $\alpha$.A + $\alpha$.B
+	\item ($\alpha$ + $\beta$).A = $\alpha$.A + $\beta$.A
+	\item ($\alpha$ $\beta$).A = $\alpha$.($\beta$.A)
+	\item I.A = A
+\end{enumerate}
+
+\paragraph{Producto de matrices}
+
+\paragraph{propiedades}
+\begin{enumerate}
+	\item asosiatividad (A.B).C = A.(B.C)
+	\item la matriz identidad I (nxn) cumple : A.I = I.A = A, esta conmuta con cualquier matriz del mismo orden.
+	\item distributividad del product en la suma A.(B+C) = A.B + A.C 
+	\item la conmutatividad NO es una propiedad general del producto de matrices entonces A.B = 0 NO implica A = 0 $\vee$ B = 0
+	\item la existencia del inverso tampoco es una propiedad general de las matrices, si una matriz no es cuadrada no posee inversa.
+\end{enumerate}
+
+\paragraph{Matriz Inversa}
+\begin{itemize}
+	\item sea A $\in$ $R^{mxn}$, A tiene inversa si existe una matriz B $\in$ $R^{mxn}$ talque A.B = I $\vee$ B.A = I, y se piden las dos condiciones porque el producto de matrices no posee emn general la propiedad conmutatividad.	
+\end{itemize}
+
+\paragraph{propiedad}
+\begin{enumerate}
+	\item si A,B matrices nxn inversibles entonces $(A.B)^{-1}$= $B^{-1}$.$A^{-1}$
+\end{enumerate}
+
+\paragraph{Matriz Traspuesta}
+\begin{itemize}
+	\item si A es mxn, su traspuesta $A^T$ es nxm y tiene coeficiente $(A^T)_{ij}$=$(A)_{ij}$
+\end{itemize}
+
+\begin{enumerate}
+	\item $(A^T)^T$ = A
+	\item $(A + B)^T$ = $A^T$ + $B^T$
+	\item K escalar de R, entonces $(K.A)^T$ = K.$A^T$
+	\item si A es nxn y B es nxn, entonces $(A.B)^T$ = $B^T$.$A^T$
+	
+	
+	\item $\textbf{Matriz simetrica}$ matriz A cuadrada nxn talque A = $A^T$
+	\item $\textbf{Matriz antisimetrica}$ matriz A cuadrada nxn talque $A^T$ = -A
+\end{enumerate}
+
+\paragraph{Matriz Escalonada}
+\begin{itemize}
+	\item el numero de ceros que preceden al primer coeficiente no nulo, aumenta en las filas siguientes. El primer coeficiente no nulo de cada fila es el coeficiente princical
+\end{itemize}
+		
+\paragraph{Matriz Reducida}
+
+\begin{itemize}
+	\item una matriz no nula A es $\textbf{reducida}$ si es escalonada y ademas sus coeficientes principales cumplen :
+	\begin{enumerate}
+		\item son los unicos coeficientes distintos de cero en sus respectivas columnas
+		\item son todos iguales a 1
+	\end{enumerate}
+\end{itemize}
+
+\paragraph{Operaciones elementales sobre las filas de una matriz}
+\begin{enumerate}
+	\item multiplicar una fila por un escalar $\alpha.F_K$ $\longrightarrow$ $F_K$
+	\item sumar a la fila $F_h$ la fila $F_K$ multiplicada por $\alpha$ no nulo
+	 $F_h$+$\alpha$.$F_K$ $\longrightarrow$ $F_h$ 
+	\item permutar dos filas $F_h$ $\longleftrightarrow$ $F_K$
+	\item se llama rango de una matriz A,indicado con r(A), al numero de filas no nulas de la escalonada o la reducida $R_A$ equivalente con A
+\end{enumerate}
+
+\paragraph{Calculo de la inversa de una matriz}
+\begin{itemize}
+	\item dada una matriz cuadrada A nxn, se amplia ubicando a su derecha la matriz identidad I del mismo orden de A, formando la matriz(A I) de orden nx2n
+	\item a esta matriz ampliada (A I) se le aplica operaciones elementales y si $R_A$ es la identidad entonces donde se ubico I se tendra la inversa $A^{-1}$ de A
+\end{itemize}
+
+\paragraph{Teorema Rouchè y Frobeniun}
+\begin{itemize}
+	\item Un sistema A.x = b es compatible $\Leftrightarrow$ r(A) = r(A$\mid$b')
+\end{itemize}
+\begin{enumerate}
+	\item r(A) = r(A $\mid$ b') = n incognitas compatible con solucion unica DETERMINADA
+	\item r(A) $\leqslant$ r(A$\mid$b') $<$ n incognitas compatible con infinitas soluciones INDETERMINADO
+	\item r(A) $<$ r(A$\mid$b') sistema INCOMPATIBLE
+\end{enumerate}
+
+\paragraph{Sistemas homogeneos de ecuaciones lineales}
+\begin{itemize}
+	\item un sistema de ecuacion lineal es homogeneo si todos los terminos independientes son ceros A.x = 0
+	\item todo sistema homogeneo es compatible: solucion trivial todas las incognitas se remplazan por ceros
+	\item si el sistema es determinado, tiene una unica solucion que debe necesariamente ser la trivial
+	\item si el sistema es indeterminado tendra ademas de la trivial otras infinitas soluciones
+\end{itemize}
+
+\paragraph{Determinantes de una matriz}
+\begin{itemize}
+	\item estan definidas en las matrices cuadradas, A de 2x2 
+\end{itemize}
+\begin{enumerate}
+	\item se calcula $\mid A \mid$ = $a_{11}.a_{22} - a_{21}.a_{12}$
+\end{enumerate}
+
+\paragraph{propiedades}
+\begin{itemize}
+	\item A cualquiera nxn
+\end{itemize}
+
+\begin{enumerate}
+	\item det$(A^T)$ = det A
+	\begin{itemize}
+		\item \textbf{corolario} toda prop de los determinantes que se enuncia para las filas vale tambien para las columnas
+	\end{itemize}
+	\item si se multiplican todos los coeficientes de una fila de A por un escalar \textit{c} entonces el detA queda multiplicado por \textit{c}
+	\begin{itemize}
+		\item \textbf{corolario} si concideramos la matriz \textit{c}.A(producto de un escalar \textit{c} por la matriz A ) entonces det(\textit{c}.A) = $c^n$.det A
+	\end{itemize}
+	\item Si una fila (o columna) de A tiene todos sus coeficientes iguales a 0 entonces detA = 0
+	\item sean A, B matrices $R^{nxn}$ entonces det(A.B) = detA.detB
+	\begin{itemize}
+		\item para la matriz I nxn, detI = 1, cualquiera sea n
+	\end{itemize}
+	\item A tiene inversa si y solo si det(A) es distinto de 0
+	\item Si la matriz A tiene inversa $A^{-1}$, entonces det($A^{-1}$) = $[det A]^{-1}$ = $\dfrac{1}{det A}$
+	\item A.x = b tiene solucion unica (es compatible determinado) si y solo si la matriz A tiene inversa
+\end{enumerate}
+
+\paragraph{Espacios vectoriales}
+\begin{itemize}
+	\item un espacio vectorial $\textbf{V}$ es un conjunto no vacio, cuyos elementos se pueden sumar entre si y multiplicar por escalares simpre perteneciendo a $\textbf{V}$ incluso su producto.
+\end{itemize}
+\paragraph{propiedades}
+\begin{itemize}
+	\item $\vec{u},\vec{x},\vec{w},\vec{v}$ $\in$ $\textbf{V}$
+\end{itemize}
+
+\begin{enumerate}
+	\item $(\vec{u}$ + $\vec{v})$ + $\vec{w}$  = $\vec{u}$ + ($\vec{v}$ + $\vec{w})$ = $\vec{u}$ + $\vec{v}$ + $\vec{w}$
+	\item neutro, vector nulo $\vec{0}$; $\vec{v}$ + $\vec{0}$ = $\vec{v}$ = $\vec{0}$ + $\vec{v}$
+	\item todo $\vec{v}$ tiene opuesto -$\vec{v}$ talque  $\vec{v}$ + (-$\vec{v}$) = $\vec{v}$ - $\vec{v}$ = $\vec{0}$
+	\item $\forall$ $\vec{v}$,$\vec{u}$;   $\vec{u}$ + $\vec{v}$ = $\vec{v}$ + $\vec{u}$
+	\begin{itemize}
+		\item $\alpha$,$\beta$ $\in$ $\Bbb{R}$
+	\end{itemize}
+	\item ($\alpha$ + $\beta$).$\vec{v}$ = $\vec{v}$ + $\alpha$. + $\vec{v}$ $\beta$
+	\item $\alpha$.($\vec{u}$ + $\vec{v}$) = $\alpha$.$\vec{u}$ + $\alpha$.$\vec{v}$
+	\item ($\alpha$.$\beta$).$\vec{v}$ = $\alpha$.($\beta$.$\vec{v}$)
+	\item 1 .$\vec{v}$ = $\vec{v}$	  
+\end{enumerate}
+
+\paragraph{subespacios vectoriales}
+\begin{itemize}
+	\item un conjunto $\textbf{S}$ incluido en un espacio vectorial $\textbf{V}$ es un subespacio de $\textbf{V}$ si satisface las siguientes condiciones:
+\end{itemize}
+\begin{enumerate}
+	\item el vector nulo 0 $\in$ $\textbf{S}$
+	\item Si $\vec{v}$,$\vec{w}$ $\in$ $\textbf{S}$ entonces $\vec{v}$+$\vec{w}$ tambien $\in$ $\textbf{S}$
+	\item $\alpha$ $\in$ $\Bbb{R}$ $\longrightarrow$ $\alpha$.$\vec{v}$ $\in$ $\textbf{S}$ 
+\end{enumerate}
+
+\paragraph{Conbinacion lineal.Vectores Generadores}
+\begin{itemize}
+	\item Un vector $\textbf{V}$ es una convinacion lineal de los vectores $\vec{v}_1$,$\vec{v}_2$,...,$\vec{v}_k$ $\in$ $\textbf{V}$ si existen escalares $c_1,c_2,...,c_k$ no necesariamente distintos tales que
+	\begin{equation}
+		v = 
+	\end{equation}
+\end{itemize}
+
+
+
+
+\end{document}

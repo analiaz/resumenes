@@ -1,0 +1,245 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\section{Rectas}
+
+\paragraph{Ecuacion general de la recta}
+	\begin{equation}
+		Ax + By + C = 0
+	\end{equation}
+
+\paragraph{Ecuacion explicita de la recta}
+	\begin{equation}
+		y = mx + b
+	\end{equation}
+
+\paragraph{Ecuacion  de la pendiente}
+	\begin{equation}
+		y ={\frac{y_2 - y_1}{x_2 - x_1}}
+	\end{equation}
+
+\paragraph{Ecuacion para sacar cordenadas (x,y) apartir de dos puntos.}
+	\begin{equation}
+		\frac{y-y_1}{y_2 - y_1} = \frac{x-x_1}{x_2 - x_1}
+	\end{equation}
+\paragraph{Paralelismo}
+	\begin{equation}
+ 		m = m'  
+	\end{equation}
+\paragraph{Perpedicularidad}
+	\begin{equation}
+ 		m.m' = -1
+	\end{equation}
+
+\paragraph{Ecuacion de la distancia entre dos puntos}
+	\begin{equation}
+		d=d(P_1,P_2)=\sqrt{(x_2 - x_1)^{2} + (y_2 - y_1)^{2}}
+	\end{equation}
+
+\section{Circunferencia}
+
+\paragraph{Ecuacion Estandar}
+	\begin{equation}
+		(x -\alpha)^{2} + (y - \beta)^{2} = r^{2}
+	\end{equation}
+
+\paragraph{Ecuacion} 
+	\begin{equation}
+		A x^{2}+ B y^{2} + C x^{2} +D y^{2} + E = 0
+	\end{equation} 
+
+\section{Parabola}
+\begin{description}
+	\item Vertice: Es el punto donde la parábola cruza su eje.
+
+	\item C: Distancia del vertice al foco y del vertice a la directriz.
+
+	\item Directriz: Recta fija perperpendicular al eje focal.
+
+\end{description}
+ 
+
+\paragraph{Ecuaciones}
+\begin{description}
+	\item Eje focal paralelo al eje x
+\end{description}	
+	\begin{equation}
+		(y - \beta)^{2}= 4c(x - \alpha)
+	\end{equation}
+\begin{description}
+	\item Eje focal paralelo al eje y
+\end{description}
+		\begin{equation}
+		(x - \alpha)^{2}=4c(y - \beta)
+	\end{equation}
+
+
+\section{Conjuntos}
+\begin{description}
+	\item Definicion: es una coleccion de objetos representada con una letra mayuscula A,B,C...
+	\item Se los puede definir de dos maneras:
+\end{description}
+\begin{itemize}
+	\item Explicita o extencion donde escribes todos sus elementos. 
+	\item Comprencion donde se enuncia una propiedad  que caracteriza a cada uno de sus elementos.
+\end{itemize}
+
+
+
+\paragraph{Operaciones entre conjuntos}
+\begin{itemize}
+
+\item Union
+	\begin{equation}
+		A \cup B = \{x; x \in A  \vee x \in  B\}
+	\end{equation}
+
+\item Intersecion
+	\begin{equation}
+		A \cap B = \{x; x \in A  \wedge x \in  B\}
+	\end{equation}
+
+\item Diferencia
+	\begin{equation}
+		A - B = \{x; x \in  A - x \notin B\}
+	\end{equation}
+\end{itemize}
+\paragraph{Reglas de equivalencia}
+\begin{itemize}
+
+\item{Asociatividad}
+	\begin{equation}
+		p \wedge (q \wedge r) \Leftrightarrow (p \wedge q) \wedge r
+	\end{equation}
+	\begin{equation}
+	p \vee (q \vee r) \Leftrightarrow (p \vee q) \vee r
+	\end{equation}
+\item{Conmutativa}
+	\begin{equation}
+		p \wedge q \Leftrightarrow q \wedge p
+	\end{equation}
+	\begin{equation}
+		p \vee q \Leftrightarrow q \vee p
+	\end{equation}
+\item{Distributiva}
+	\begin{equation}
+		p \wedge (q \vee r) \Leftrightarrow (p \wedge q) \vee (p \wedge r)
+	\end{equation}
+	\begin{equation}
+		p \vee (q \wedge r) \Leftrightarrow (p \vee q) \wedge (p \vee r)
+	\end{equation}
+\item{De Morgan}
+	\begin{equation}
+		\neg(p \wedge q) \Leftrightarrow ( \neg p \vee \neg q)
+	\end{equation}
+	\begin{equation}
+		\neg(p \vee q) \Leftrightarrow ( \neg p \wedge \neg q)
+	\end{equation}
+\item{Implicacion}
+	\begin{equation}
+ 		(p \rightarrow q) \Leftrightarrow (\neg p \vee q) \Leftrightarrow \neg(p \wedge \neg q)
+	\end{equation}
+\item{Contraposicion}
+	\begin{equation}
+		(p \rightarrow q) \Leftrightarrow (\neg q \rightarrow \neg p)
+	\end{equation}
+\end{itemize}
+\paragraph{Reglas de Inferencia}
+\begin{itemize}
+\item{Simplificacion}
+	\begin{equation}
+		(p \wedge q) \Rightarrow p  
+	\end{equation}
+	\begin{equation}
+		(p \wedge q) \Rightarrow q
+	\end{equation}
+
+\item{Adicion}
+	\begin{equation}
+		p \Rightarrow (p \vee q)
+	\end{equation}
+	\begin{equation}
+		q \Rightarrow ( q \vee p)
+	\end{equation}
+
+\end{itemize}
+
+
+\section{Funciones}
+\paragraph{Inyectiva}
+\begin{itemize}
+	\item Una funcion F: $A \rightarrow B$ es inyectiva si $\forall$ $x_1,x_2 \in$ A = Dom F, $x_1 \neq x_2$ y sus imagenes $F(x_1)$ ,$F(x_2)$ son distintas $\forall$ $x_1$,$ x_2 \in$ Dom F.
+
+\item Si $x_1 \neq x_2 \Longrightarrow F(x_1) \neq F(x_2)$.
+
+\item Pueden quedar elementos sueltos en el codominio.
+\end{itemize}
+
+\paragraph{Suryectiva}
+\begin{itemize}
+	\item Una funcion F: $A \rightarrow B$ es suryectiva si $\forall$y$\in B$ $\exists$ algun $x \in A$ talque $F(x)= y$
+	\item Img F : B
+	\item No deben quedar elementos sueltos.	
+\end{itemize}
+
+\paragraph{Biyectiva}
+\begin{itemize}
+	\item  Cuando una funcion F: $A \rightarrow B$ es inyectiva y suryectiva entonces es biyectiva. 
+\end{itemize}
+
+\paragraph{Regla general}
+\begin{description}
+	\item Si una funcion tiene su exponente par entonces no es "inyectiva".
+\end{description}
+
+\section{Sucesiones}
+
+\paragraph{Aritmetica}
+\begin{description}
+	\item Forma explicita : $a_n = a_1 + (n-1).d$
+	\item Forma por recurrencia :	\begin{equation*}
+	\begin{cases}
+    	     a_1 = n \\ 
+    	     a_n = a_{n-1} + d                
+    \end{cases}
+\end{equation*}
+\end{description}
+	La suma de los primeros terminos de una sucesion aritmetica  $a_1$,$a_2$,$a_3$...$a_n$ es
+	\begin{equation}
+		S_n = \sum_{i=1}^{n}a_i =\frac{n(a_1 + a_n)}{2} 
+	\end{equation}	
+
+\paragraph{Geometrica}
+\begin{description}
+	\item Forma explicita : $a_n = a_1 . r^n$
+	\item Forma por recurrencia : \begin{equation*}
+	\begin{cases}
+    	    a_1 = n \\ 
+    	    a_n = a_{n-1} . r	                  
+    \end{cases}
+\end{equation*}
+\end{description}
+	La suma de los primeros terminos de una sucesion geometrica  $a_1$,$a_2$,$a_3$...$a_n$ es:
+	\begin{equation}
+		S_n = \sum_{i=1}^{n}a_i =\frac{a_1(1 - r^n)}{1-r} 
+	\end{equation}
+
+\section{Induccion}
+\begin{description}
+	\item Si $\forall$n $\in (\Bbb{N})$,$P(n)$
+\end{description}
+	
+\begin{enumerate}
+	\item Probar P(0) o P(1);		
+	\item Hipotesis Inductiva...Suponer Verdadero  un P(k);
+	\item Probar P(k + 1);
+\end{enumerate}
+
+\begin{description}
+\item Si se cumple todo lo de arriba entonces por principio de induccion completa(PIC) $P(n)$ vale $\forall$n $\geqslant$ 0  o 1.
+\end{description}
+
+
+\end{document}
+
