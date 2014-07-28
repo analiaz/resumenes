@@ -1,0 +1,134 @@
+\documentclass[a4paper, twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{lscape}
+
+\begin{document}
+\begin{landscape}
+\begin{multicols}{2}
+\begin{multicols}{2}
+[
+\section*{Manejo de Archivos}
+]
+\begin{itemize}
+	\item C-x C-f : abre un archivo
+	\item C-x C-s : guaradr archivo actual, sin 			preguntar
+	\item C-x s : guardar todos los acrivos, preguntar
+	\item C-x C-w : guardar cambiando el nombre
+
+	\item M-x recover-file : recupera un archivo 				autoguardado 	
+	\item C-x C-c : salir
+
+\end{itemize}
+
+
+\end{multicols}
+\begin{flushleft}
+\begin{itemize}
+	\item Al guardar un archivo, emacs guarda un 			buckup(copia de respaldo) de la vercion anterior, 	con el nombre $archivo\backsim$. 
+	\item Cada cierto tiempo se guarda 						automaticamente una copia con el nombre \#archivo\#
+\end{itemize}
+\end{flushleft}
+
+\section*{Cortar/copiar/pegar}
+\begin{multicols}{2}
+\begin{itemize}
+	\item C-k: cortar desde el cursor hatsa el final de la linea
+	\item C-y : pega donde esta el cursor
+	\item C-space : inicia selecion
+	\item M-w : copia la region seleccionada
+	\item C-w : corta la region selecionada
+	\item C-g : cancelar, terminar seleccion
+\end{itemize}
+\end{multicols}
+
+\section*{Comandos de Cursor}
+\begin{multicols}{2}
+\begin{itemize}
+	\item C-a : ir al principio de linea
+	\item C-e : ir al final de linea
+	\item M-$<$ : ir al principio del buffer
+	\item M-$>$ : ir al final del buffer
+	
+	\item C-$\diagup$ : deshacer
+	\item C-g C-$\diagup$ : rehacer
+\end{itemize}
+\end{multicols}
+
+\section*{Administrador de buffers}
+\begin{multicols}{2}
+\begin{itemize}
+	\item C-x b : cambiar de buffer
+	\item C-x C-b : cambiar de buffer mostrando una lista en un panel nuevo
+	\item C-x o : cambia de ventana (panel)
+	
+	\item C-x 1 : deja la ventana actual, cierra las demas
+	\item C-x 2 : divide verticalemnte el panel (arriba-abajo)
+	\item C-x 3 : divide horizntalmente el panel (izq-der)
+	\item C-x 0 : cierra la ventana actual
+\end{itemize}
+\end{multicols}
+
+
+\section*{Comandos de busqueda}
+\begin{multicols}{2}
+\begin{itemize}
+	\item C-s : busqueda dinamica
+	\begin{itemize}
+		\item C-j : nueva linea
+		\item C-g : cancelar
+		\item C-s : moverse entre ocurrecioas
+	\end{itemize}
+	\item M-C-s : busqueda mediante regexp(expresion regular)
+	\item M-\% : buscar y remplazar
+	\begin{itemize}
+		\item y : aceptar
+		\item n : omitir
+		\item ! : todos		
+		\item q o Enter : finalizar
+	\end{itemize}
+	\item M-s o : buscar mostrando ocurrencias en otra ventana (Enter para saltar)
+	\item M-x grep : busca mediante regexp en archivos (Enter archivo deseado)
+	\item M-x rgrep : busca como grep pero recursivamente en directorio
+\end{itemize}
+\end{multicols}
+
+\section*{Comandos}
+\begin{flushleft}
+Emacs entiende elisp, su propio dialecto de lisp
+	\begin{flushleft}
+		M-x comando : ejecuta el comando y debes    				presionar TAB para autocompletar.
+		ejemplos =
+		\begin{itemize}
+		    \item M-x pwd : imprime el directorio 					actual
+			\item M-x indent-region : indenta una 					region seleccionada
+			\item C-x C-e : evalua la expresion lisp 				detras del cursor y si es variable 						muestra su contenido
+		\end{itemize}
+			
+\end{flushleft} 
+\end{flushleft}
+
+
+\section*{Configuracion y gestion de paquetes}
+
+\begin{flushleft}
+\begin{itemize}
+	\item La configuracion de emacs se guarda en $			\thicksim/.emacs.d/$
+	\item se edita un archivo $.el$ con las 				sentencias lisp
+	\item se ejecuta al iniciar emacs
+\end{itemize}
+
+	\item M-x list-packages : muestra la lista de paquetes
+	\begin{itemize}
+		\item i : seleccionar para instalar
+		\item d : seleccionar para quitar
+		\item luego aplicar cambios con $x$
+	\end{itemize}
+\end{flushleft}
+
+
+\end{multicols}
+\end{landscape}
+\end{document}
